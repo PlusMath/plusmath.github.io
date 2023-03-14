@@ -1,256 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
 <head>
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async>
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1850976756546478"
+    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="BsMSSt9GG69uKH43Cfii-ib6oSkS5u2RcegUDFdBuJA" />
+    <meta name="naver-site-verification" content="9026e21a7fb728f3fcbbd07214bc8b2872168676" />
+    <title>에브리띵의 정보공유 홈페이지</title>
+    <script src="https://ads-partners.coupang.com/g.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
+    <script data-ad-client="ca-pub-4973537494905596" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+        Kakao.init(cd1ae943e2df129bfed675eb96a65f35);
+        
+        function shareKatalk() {
+        Kakao.Link.sendScrap({
+            requestUrl: location.href
+        });
+        };
+        </script>
+    <style>
+    @font-face {
+        font-family: 'Maplestory Bold';
+        src: local('Maplestory Bold'),
+            url('Maplestory Bold.eot'),
+            url('Maplestory Bold.woff') format('woff'),
+            url('Maplestory Bold.woff2') format('woff2'),
+            url('Maplestory Bold.ttf') format('truetype');
+    } 
+    h1 {font-size: 50px;
+        text-align: center; 
+        font-family: 'Maplestory Bold', sans-serif;    
+    }
+    div{
+        text-align: center;
+        vertical-align: middle;
+    }
+    .floating-button {
+  display: flex;
+  position: fixed;
+  right: 10px;
+  bottom: 15px;
+  z-index: 999;
+}
 
-  <title>Stylish Portfolio - Start Bootstrap Template</title>
+.youtube-btn::before, .kakaotalk-btn::before,.top-btn::before, .myWebSite-btn::before {
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   border-radius: 50%;
+   font-size: 2em;
+   font-family: 'Font Awesome 5 Pro','Font Awesome 5 Brands','Font Awesome 5 Free';
+	 /*플로팅 버튼 아이콘 색상 수정O*/
+	 color: #b67700;
+}
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+/*플로팅 버튼 스타일*/
+.move-youtube, .share-kakaotalk, .move-top, .move-myWebSite {
+  float: left;
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  /*사용자 설정 파트*/	
+  font-weight: 700;
+  background-color: #00000000;
+  border: 4px solid #b67700;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
 
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+/*플로팅 버튼 아이콘 FontAwesome 사용자 설정*/
 
+.youtube-btn::before {
+	    content: '\f167';
+}
+.kakaotalk-btn::before {
+        content: '\f064'
+}
+.top-btn::before {
+	  content: '\f34d';
+}
+.myWebSite-btn::before {
+	content: '\f015'
+}
+</style>
+    
 </head>
-
-<body id="page-top">
-
-  <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1">Stylish Portfolio</h1>
-      <h3 class="mb-5">
-        <em>A Free Bootstrap Theme by Start Bootstrap</em>
-      </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+<body leftmargin='0' topmargin='0' marginwidth='0' barginheight='0' >
+    <h1>에브리띵의 정보공유 홈페이지</h1>
+    <div>
+    <a href="6.html"><img src="s23.png" alt="6번영상" width="384" height="216" loading="lazy"></a>
+    <a href="5.html"><img src="3month.png" alt="5번영상" width="384" height="216" loading="lazy"></a>
+    <a href="2.html"><img src="phone30_2.jpg" alt="2번영상" width="384" height="216" loading="lazy"></a>
+    <a href="1.html"><img src="phone_1.jpg" alt="1번영상" width="384" height="216" loading="lazy"></a>
+    
     </div>
-    <div class="overlay"></div>
-  </header>
+    <ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-y14GpHt6Rv7ojn8n"
+data-ad-width = "160"
+data-ad-height = "600"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+<ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-FTOfPCSnz0qpJfPq"
+data-ad-width = "728"
+data-ad-height = "90"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-          <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-            <a href="https://unsplash.com/">Unsplash</a>!</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="floating-button">
+        <span class="move-myWebSite">
+            <a class="myWebSite-btn" href="https://edding.kr/"></a>
+         </span>
+        <span class="move-youtube">
+           <a class="youtube-btn" href="https://www.youtube.com/channel/UCJELy6gvjAGj5qYKhRNASvg"></a>
+        </span>
+        <span class="share-kakaotalk">
+            <a class="kakaotalk-btn" href="javascript:;"></a>
+        </span>
 
-  <!-- Services -->
-  <section class="content-section bg-primary text-white text-center" id="services">
-    <div class="container">
-      <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Services</h3>
-        <h2 class="mb-5">What We Offer</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-          <h4>
-            <strong>Responsive</strong>
-          </h4>
-          <p class="text-faded mb-0">Looks great on any screen size!</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-pencil"></i>
-          </span>
-          <h4>
-            <strong>Redesigned</strong>
-          </h4>
-          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-like"></i>
-          </span>
-          <h4>
-            <strong>Favorited</strong>
-          </h4>
-          <p class="text-faded mb-0">Millions of users
-            <i class="fas fa-heart"></i>
-            Start Bootstrap!</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-mustache"></i>
-          </span>
-          <h4>
-            <strong>Question</strong>
-          </h4>
-          <p class="text-faded mb-0">I mustache you a question...</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Callout -->
-  <section class="callout">
-    <div class="container text-center">
-      <h2 class="mx-auto mb-5">Welcome to
-        <em>your</em>
-        next website!</h2>
-      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/themes/stylish-portfolio/">Download Now!</a>
-    </div>
-  </section>
-
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#!">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Stationary</div>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#!">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Ice Cream</div>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#!">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Strawberries</div>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#!">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Workspace</div>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#!" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#!" class="btn btn-xl btn-dark">Look at Me!</a>
-    </div>
-  </section>
-
-  <!-- Map -->
-  <div id="contact" class="map">
-    <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br />
-    <small>
-      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-facebook"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Your Website 2020</p>
-    </div>
-  </footer>
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
+         <span class="move-top">
+             <a class="top-btn" href=#></a>
+         </span>
+ 
+     </div>
 
 </body>
-
 </html>
